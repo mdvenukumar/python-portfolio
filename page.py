@@ -8,7 +8,6 @@ st.set_page_config(page_icon="🧬", #set the page favicon
                    page_title="Durga Venu Kumar Mutyala", #tab name
                 
                    )
-# Set meta data
 st.markdown(
     """
     <head>
@@ -21,11 +20,11 @@ st.markdown(
 )
 
 
-st.title("Durga Venu Kumar Mutyala", anchor=False)
+st.title("🧬 M D Venu Kumar", anchor=False)
 st.subheader("🔥 Aspriring Generative AI Engineer", anchor=False)
 
 #NAVIGATION
-about, e1, skills, e2, projects, e3, publications, e4, contact, e5= st.tabs(["About","|", "Skills", "|","Projects","|", "Publications","|", "Get in Touch", "|"])
+about, e1, skills, e2, projects, e3, publications, e4, contact= st.tabs(["About","|", "Skills", "|","Projects","|", "Publications","|", "Contact Me"])
 
 
 
@@ -225,3 +224,12 @@ with contact:
     st.markdown("➡️ LinkedIn: [https://www.linkedin.com/in/venukumarmd](https://www.linkedin.com/in/venukumarmd)")
     st.markdown("➡️ Instagram: [https://www.instagram.com/_the_vk.__/](https://www.instagram.com/_the_vk.__/)")
     st.markdown("➡️ GitHub: [https://github.com/mdvenukumar](https://github.com/mdvenukumar)")
+
+
+hide_streamlit_style = """
+            <style>
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
